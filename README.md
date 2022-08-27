@@ -8,11 +8,12 @@ This repo will be synced with the
 
 ## Requirements
 
-### API Keys
+### Secrets
 During setup of the new GitHub repository, set these [Secrets for GitHub Actions](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository):
 
-* `INFRACOST_API_KEY`
-* `LOCALSTACK_API_KEY`
+* `INFRACOST_API_KEY` ([Infracost](https://www.infracost.io))
+* `LOCALSTACK_API_KEY` ([LocalStack](https://localstack.cloud))
+* `PERSONAL_ACCESS_TOKEN` (GitHub Personal Access Token with `workflow` scope)
 
 > For modules without LocalStack support, please set `LOCALSTACK_API_KEY` 
 > to `false`
@@ -35,3 +36,11 @@ with Diagram("repository-name", outformat="png", filename="screenshot1", show=Fa
 Create a `README.yaml` in the `docs/` subdirectory, which will be used in the 
 [stackx-action-readme-templates](https://github.com/ventx/stackx-action-readme-templates) 
 GitHub Action to generate the final README.md file.
+
+
+### Pull Request Labels
+
+Add the following labels to your repository if they are not already there:
+
+* `chore`
+* `template-sync`
