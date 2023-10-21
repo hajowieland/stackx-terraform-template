@@ -1,4 +1,4 @@
-name: PR - Tfsec
+name: tfsec
 
 on:
   pull_request:
@@ -9,11 +9,10 @@ on:
 
 jobs:
   tfsec:
-    name: Tfsec
+    name: tfsec
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       TF_IN_AUTOMATION: true
     steps:
       - name: Checkout
