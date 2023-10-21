@@ -2,7 +2,7 @@ ci:
   - .dependabot/*
   - .github/workflows/*
 
-docs:
+documentation:
   - docs/**/*
   - .github/*
   - ./*.md
