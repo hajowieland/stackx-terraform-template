@@ -11,13 +11,8 @@ This repo will be synced with the
 ### Secrets
 During setup of the new GitHub repository, set these [Secrets for GitHub Actions](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository):
 
-* `INFRACOST_API_KEY` ([Infracost](https://www.infracost.io))
-* `LOCALSTACK_API_KEY` ([LocalStack](https://localstack.cloud))
-* `PERSONAL_ACCESS_TOKEN` (GitHub Personal Access Token with `workflow` scope)
-
-> For modules without LocalStack support, please set `LOCALSTACK_API_KEY` 
-> to `false`
-
+* Set `APP_ID` and `PRIVATE_KEY` for the ventx-Bot GitHub App
+* Set cloud-specific Secrets
 
 ### Diagrams
 
@@ -43,4 +38,7 @@ GitHub Action to generate the final README.md file.
 Add the following labels to your repository if they are not already there:
 
 * `chore`
+* `ci`
+* `docs`
 * `template-sync`
+* `terraform`
